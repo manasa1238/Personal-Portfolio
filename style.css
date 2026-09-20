@@ -2387,3 +2387,359 @@ footer {
         margin: 0 7px;
     }
 }
+
+/* =========================================================
+   FINAL RESPONSIVE + ANIMATION OVERRIDES
+   Keeps the existing portfolio content, fonts and ordering.
+========================================================= */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Smooth reveal animation */
+section,
+.education-sports-container,
+.certificate-card,
+.project-card,
+.skill-card,
+.education-card,
+.Sports,
+.home-content,
+.profile-container {
+    animation: portfolioFadeUp 0.8s ease both;
+}
+
+@keyframes portfolioFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(28px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Better hover motion without changing the existing design */
+.skill-card,
+.project-card,
+.education-card,
+.Sports,
+.certificate-card,
+.btn,
+.download-btn,
+.project-btn,
+.view-certificate-btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-card:hover,
+.education-card:hover,
+.Sports:hover {
+    transform: translateY(-7px);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Prevent long text from breaking the layout */
+h1, h2, h3, h4, p, a, li {
+    overflow-wrap: anywhere;
+}
+
+/* =========================
+   LARGE TABLET
+========================= */
+@media (max-width: 1100px) {
+    .navbar {
+        padding: 15px 4%;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .home {
+        width: 92%;
+        gap: 45px;
+    }
+
+    .education-sports-container {
+        width: 92%;
+        gap: 25px;
+    }
+
+    .project-container {
+        width: 92%;
+    }
+
+    .certificate-container {
+        width: 92%;
+    }
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        padding: 14px 5%;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .logo h2 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .nav-links {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav-links li {
+        list-style: none;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 9px 4px;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .home {
+        width: 90%;
+        min-height: auto;
+        padding: 70px 0;
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .profile-container,
+    .home-content {
+        width: 100%;
+    }
+
+    .profile-image {
+        width: min(280px, 80vw);
+        height: min(360px, 105vw);
+        margin: 0 auto;
+    }
+
+    .home-content h1,
+    .home-content h2,
+    .home-content h3,
+    .home-content p {
+        text-align: center;
+    }
+
+    .home-content p {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .education-sports-container {
+        width: 90%;
+        grid-template-columns: 1fr;
+        display: grid;
+    }
+
+    .skills-container {
+        width: 90%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .certificate-container {
+        width: 90%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .certificate-card {
+        min-width: 0;
+    }
+
+    .project-container {
+        width: 90%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 560px) {
+    .navbar {
+        padding: 12px 4%;
+    }
+
+    .nav-links {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+        padding: 8px 3px;
+    }
+
+    section {
+        width: 92%;
+    }
+
+    section h2,
+    .certificates .section-title,
+    #projects > h2 {
+        font-size: clamp(25px, 8vw, 32px);
+        line-height: 1.2;
+    }
+
+    .home {
+        width: 92%;
+        padding: 55px 0;
+        gap: 25px;
+    }
+
+    .profile-image {
+        width: min(220px, 72vw);
+        height: min(290px, 95vw);
+    }
+
+    .home-content h1 {
+        font-size: clamp(27px, 8vw, 34px);
+    }
+
+    .home-content h2 {
+        font-size: clamp(25px, 7vw, 32px);
+    }
+
+    .home-content h3 {
+        font-size: clamp(17px, 5vw, 21px);
+    }
+
+    .home-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .skills-container,
+    .project-container,
+    .certificate-container {
+        width: 92%;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .skill-card,
+    .project-card,
+    .certificate-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .project-image-box {
+        height: 210px;
+    }
+
+    .project-image {
+        max-width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .project-buttons {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .project-btn,
+    .view-certificate-btn {
+        min-width: 0;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    form input,
+    form textarea {
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    .download-btn {
+        max-width: 90%;
+    }
+
+    footer {
+        padding: 25px 15px;
+    }
+}
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+@media (max-width: 360px) {
+    .nav-links {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links a {
+        padding: 7px;
+    }
+
+    .profile-image {
+        width: 180px;
+        height: 240px;
+    }
+
+    .skills-container,
+    .project-container,
+    .certificate-container {
+        width: 94%;
+    }
+}
+
+/* Respect accessibility settings */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
