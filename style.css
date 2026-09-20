@@ -1,0 +1,2389 @@
+/* =====================================================
+   GOOGLE FONT
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #d0e1e1;
+    color: #494547;
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   HEADER / NAVBAR
+===================================================== */
+
+header {
+    width: 100%;
+    background: #151f36;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 0;
+}
+
+.logo h2 {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+
+/* =====================================================
+   COMMON SECTION
+===================================================== */
+
+section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+    color: #c1272c;
+}
+
+/* =====================================================
+   HOME SECTION
+   IMAGE LEFT + TEXT RIGHT
+===================================================== */
+
+.home {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 80px;
+
+    padding: 80px 40px;
+
+    text-align: left;
+}
+
+
+/* =====================================================
+   PROFILE IMAGE - LEFT SIDE
+===================================================== */
+
+.profile-container {
+    width: 40%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 0;
+}
+
+.profile-image {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid #ff4f81;
+    cursor: pointer;
+}
+
+
+
+/* =====================================================
+   HOME CONTENT - RIGHT SIDE
+===================================================== */
+
+.home-content {
+    width: 60%;
+    max-width: 650px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    text-align: left;
+}
+
+
+/* =====================================================
+   HOME HEADING
+===================================================== */
+
+.home h1 {
+    font-size: 48px;
+
+    margin-bottom: 15px;
+
+    color: #e21010;
+
+    text-align: left;
+}
+
+.home h1 span {
+    color: #de0868;
+}
+
+
+/* =====================================================
+   HOME SUBTITLE
+===================================================== */
+
+.home h3 {
+    color: #de0868;
+
+    margin-bottom: 20px;
+
+    font-size: 24px;
+
+    text-align: left;
+}
+
+
+/* =====================================================
+   HOME DESCRIPTION
+===================================================== */
+
+.home p {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 0 0 30px;
+
+    color: #d01469;
+
+    text-align: left;
+}
+
+
+/* =====================================================
+   HOME BUTTON
+===================================================== */
+
+.home .btn {
+    display: inline-block;
+
+    margin: 0;
+}
+
+
+/* =====================================================
+   TABLET - 992px
+===================================================== */
+
+@media (max-width: 992px) {
+
+    .home {
+        gap: 40px;
+
+        padding: 70px 30px;
+    }
+
+    .profile-image {
+        width: 220px;
+        height: 220px;
+    }
+
+    .home-content {
+        width: 60%;
+    }
+
+    .home h1 {
+        font-size: 38px;
+    }
+
+    .home h3 {
+        font-size: 21px;
+    }
+
+    .home p {
+        font-size: 15px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE - 768px
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .home {
+        width: 100%;
+
+        min-height: auto;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        gap: 30px;
+
+        padding: 70px 20px;
+
+        text-align: center;
+    }
+
+    .profile-container {
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        margin-bottom: 0;
+    }
+
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .home-content {
+        width: 100%;
+
+        max-width: 600px;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .home h1 {
+        font-size: 32px;
+
+        text-align: center;
+    }
+
+    .home h3 {
+        font-size: 20px;
+
+        text-align: center;
+    }
+
+    .home p {
+        width: 95%;
+
+        text-align: center;
+
+        margin: 0 auto 25px;
+    }
+
+    .home .btn {
+        margin: 0 auto;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE - 480px
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .home {
+        padding: 60px 15px;
+
+        gap: 25px;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .home h1 {
+        font-size: 28px;
+    }
+
+    .home h3 {
+        font-size: 18px;
+    }
+
+    .home p {
+        font-size: 15px;
+
+        width: 100%;
+    }
+}
+
+
+
+/* =====================================================
+   COMMON BUTTON
+===================================================== */
+
+.btn {
+    display: inline-block;
+
+    background: #300430;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    padding: 14px 35px;
+
+    border-radius: 30px;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #7f0753;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about {
+    width: 100%;
+    padding: 80px 8%;
+}
+
+/* About Heading */
+.about h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #c01515;
+}
+
+/* Image + Content Container */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* =========================
+   LEFT SIDE IMAGE
+========================= */
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15%;
+    border: 5px solid #044152;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   RIGHT SIDE CONTENT
+========================= */
+
+.about-content {
+    flex: 1;
+    text-align: left;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #075e7b;
+    margin-bottom: 25px;
+}
+
+/* Explore More Button */
+.about-content .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #190426;
+    color: rgb(243, 234, 234);
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.about-content .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .about-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 240px;
+        height: 240px;
+    }
+
+    .about h2 {
+        font-size: 32px;
+    }
+
+    .about-text {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+/* =====================================================
+   SKILLS
+===================================================== */
+
+.skills-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(180px, 1fr));
+
+    gap: 25px;
+}
+
+.skill-card {
+    background: #c7c6c6;
+
+    padding: 25px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.10);
+
+    transition: all 0.3s ease;
+
+    font-weight: 600;
+
+    color: #333333;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+
+    background: #a7065c;
+
+    color: rgb(5, 5, 42);
+}
+/* =====================================================
+   EDUCATION + SPORTS CONTAINER
+===================================================== */
+
+.education-sports-container {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    padding: 80px 7%;
+    align-items: stretch;
+}
+
+
+/* =====================================================
+   EDUCATION SECTION
+===================================================== */
+
+.education {
+    flex: 1;
+    padding: 40px;
+    background: #b8effa;
+    border-radius: 20px;
+}
+
+
+/* EDUCATION TITLE */
+
+.education h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #e22f44;
+    margin-bottom: 40px;
+}
+
+
+/* EDUCATION CARD */
+
+.education-card {
+    background: #e7dcdc;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    border-left: 6px solid #f3eff7;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 12px rgba(129, 24, 103, 0.1);
+}
+
+
+/* EDUCATION HEADING */
+
+.education-card h3 {
+    margin-bottom: 10px;
+    color: #da0c2b;
+}
+
+
+/* EDUCATION TEXT */
+
+.education-card p {
+    color: #e0348a;
+    line-height: 1.7;
+}
+/* =====================================================
+   EDUCATION ICON - CENTER OF CARD
+===================================================== */
+
+.education-icon {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.education-icon i {
+    font-size: 55px;
+    color: #252324;
+
+    transition: 0.3s ease;
+}
+
+/* Icon hover effect */
+
+.education-card:hover .education-icon i {
+    transform: scale(1.15);
+}
+
+
+
+/* =====================================================
+   SPORTS SECTION
+===================================================== */
+
+#Sports {
+    flex: 1;
+
+    width: auto;
+    max-width: none;
+
+    margin: 0;
+
+    padding: 40px;
+
+    background: #b2f8f8;
+
+    text-align: center;
+
+    border-radius: 20px;
+}
+
+
+/* =====================================================
+   SPORTS TITLE
+===================================================== */
+
+#Sports h2 {
+    font-size: 40px;
+
+    font-weight: 700;
+
+    color:  #da0c2b;
+
+    margin-bottom: 45px;
+
+    position: relative;
+}
+
+
+/* =====================================================
+   SPORTS TITLE UNDERLINE
+===================================================== */
+
+#Sports h2::after {
+    content: "";
+
+    display: block;
+
+    width: 70px;
+
+    height: 4px;
+
+    margin: 12px auto 0;
+
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   SPORTS CONTENT
+===================================================== */
+
+.Sports {
+    width: 100%;
+
+    max-width: none;
+
+    margin: 0 auto;
+
+    padding: 35px 40px;
+
+    background: #e7dcdc;
+
+    border: 2px solid #e0e0e0;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.08);
+
+    transition: all 0.3s ease;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   SPORTS HOVER
+===================================================== */
+
+.Sports:hover {
+    transform: translateY(-8px);
+
+    border-color: #ff4081;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =====================================================
+   SPORTS PARAGRAPH
+===================================================== */
+
+.Sports p {
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #555555;
+
+    margin: 0;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   SPORTS ICON - CENTER OF CARD
+===================================================== */
+
+.sports-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+/* Sports icon */
+.sports-icon i {
+    font-size: 55px;
+    color: #070707;
+
+    transition: 0.3s ease;
+}
+
+/* Icon hover effect */
+.Sports:hover .sports-icon i {
+    transform: scale(1.15);
+}
+
+
+/* =====================================================
+   TABLET - 992px
+===================================================== */
+
+@media (max-width: 992px) {
+
+    .education-sports-container {
+        padding: 70px 5%;
+        gap: 20px;
+    }
+
+    .education {
+        padding: 30px;
+    }
+
+    #Sports {
+        padding: 30px;
+    }
+
+    .education h2,
+    #Sports h2 {
+        font-size: 35px;
+    }
+
+    .Sports {
+        padding: 30px 25px;
+    }
+
+    .Sports p {
+        font-size: 17px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE - 768px
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .education-sports-container {
+        flex-direction: column;
+        padding: 60px 5%;
+        gap: 30px;
+    }
+
+    .education {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #Sports {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .education h2,
+    #Sports h2 {
+        font-size: 32px;
+    }
+
+    .Sports {
+        padding: 25px 20px;
+    }
+
+    .Sports p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE - 480px
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .education-sports-container {
+        padding: 50px 5%;
+    }
+
+    .education {
+        padding: 25px 20px;
+    }
+
+    #Sports {
+        padding: 25px 20px;
+    }
+
+    .education h2,
+    #Sports h2 {
+        font-size: 28px;
+    }
+
+    .education-card {
+        padding: 20px;
+    }
+
+    .Sports {
+        padding: 22px 15px;
+    }
+
+    .Sports p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
+
+
+
+/* =====================================================
+   PROJECTS
+===================================================== */
+
+#projects {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 90px 5%;
+    background: rgb(204, 245, 245);
+
+}
+
+/* =====================================================
+   PROJECT SECTION TITLE
+===================================================== */
+
+#projects > h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #f03b50;
+    margin-bottom: 55px;
+    position: relative;
+}
+
+#projects > h2::after {
+    content: "";
+
+    display: block;
+
+    width: 70px;
+    height: 4px;
+    margin: 12px auto 0;
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   PROJECT CONTAINER
+===================================================== */
+
+.project-container {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 35px;
+
+    align-items: stretch;
+}
+
+
+/* =====================================================
+   PROJECT CARD
+===================================================== */
+
+.project-card {
+    background: #d2e5e7;
+
+    border: 2px solid #b5b5b5;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    min-height: 560px;
+
+    padding: 30px 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    transition: all 0.3s ease;
+}
+
+
+/* =====================================================
+   PROJECT CARD HOVER
+===================================================== */
+
+.project-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #cb128d;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =====================================================
+   PROJECT IMAGE BOX
+===================================================== */
+
+.project-image-box {
+    width: 100%;
+    height: 190px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 25px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: #feffff;
+}
+
+
+/* =====================================================
+   PROJECT IMAGE
+===================================================== */
+
+.project-image-box img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+
+/* Image hover */
+
+.project-card:hover .project-image-box img {
+    transform: scale(1.05);
+}
+
+
+/* =====================================================
+   PROJECT CONTENT
+===================================================== */
+
+.project-content {
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+}
+
+
+/* =====================================================
+   PROJECT TITLE
+===================================================== */
+
+.project-content h3 {
+    font-size: 27px;
+
+    font-weight: 700;
+
+    line-height: 1.45;
+
+    color: #ae1366;
+
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   PROJECT DESCRIPTION
+===================================================== */
+
+.project-content p {
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #555555;
+
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+   PROJECT BUTTON CONTAINER
+===================================================== */
+
+.project-buttons {
+    margin-top: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 18px;
+
+    width: 100%;
+}
+
+
+/* =====================================================
+   PROJECT BUTTON
+===================================================== */
+
+.project-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    min-width: 145px;
+
+    padding: 14px 20px;
+
+    background: #150e0e;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border: 2px solid #aaaaaa;
+
+    border-radius: 35px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+
+/* =====================================================
+   PROJECT BUTTON HOVER
+===================================================== */
+
+.project-btn:hover {
+    background: #d40677;
+
+    border-color: #f03b50;
+
+    transform: translateY(-3px);
+
+    box-shadow: rgba(255, 64, 129, 0.3)
+}
+
+
+/* =====================================================
+   GITHUB ICON
+===================================================== */
+
+.project-btn i {
+    font-size: 17px;
+}
+
+
+/* =====================================================
+   TABLET - 1200px
+===================================================== */
+
+@media (max-width: 1200px) {
+
+    .project-container {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 25px;
+    }
+
+    .project-card {
+        min-height: 540px;
+    }
+
+    .project-content h3 {
+        font-size: 24px;
+    }
+
+    .project-buttons {
+        gap: 10px;
+    }
+
+    .project-btn {
+        min-width: 120px;
+
+        padding: 12px 15px;
+
+        font-size: 14px;
+    }
+}
+
+
+/* =====================================================
+   TABLET - 992px
+===================================================== */
+
+@media (max-width: 992px) {
+
+    #projects {
+        padding: 75px 5%;
+    }
+
+    #projects > h2 {
+        font-size: 35px;
+    }
+
+    .project-container {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 25px;
+    }
+
+    .project-card {
+        min-height: 520px;
+    }
+
+    .project-image-box {
+        height: 200px;
+    }
+
+    .project-content h3 {
+        font-size: 24px;
+    }
+
+    .project-buttons {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* =====================================================
+   MOBILE - 768px
+===================================================== */
+
+@media (max-width: 768px) {
+
+    #projects {
+        padding: 65px 5%;
+    }
+
+    #projects > h2 {
+        font-size: 31px;
+
+        margin-bottom: 40px;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+
+        max-width: 500px;
+
+        gap: 25px;
+    }
+
+    .project-card {
+        min-height: auto;
+
+        padding: 25px 20px;
+    }
+
+    .project-image-box {
+        height: 220px;
+
+        margin-bottom: 20px;
+    }
+
+    .project-content h3 {
+        font-size: 24px;
+    }
+
+    .project-content p {
+        font-size: 14px;
+    }
+
+    .project-buttons {
+        flex-direction: row;
+
+        gap: 12px;
+    }
+
+    .project-btn {
+        flex: 1;
+
+        min-width: 0;
+
+        padding: 12px 15px;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE - 480px
+===================================================== */
+
+@media (max-width: 480px) {
+
+    #projects {
+        padding: 55px 5%;
+    }
+
+    #projects > h2 {
+        font-size: 28px;
+    }
+
+    .project-card {
+        padding: 20px 18px;
+
+        border-radius: 20px;
+    }
+
+    .project-image-box {
+        height: 180px;
+
+        border-radius: 15px;
+    }
+
+    .project-content h3 {
+        font-size: 21px;
+    }
+
+    .project-content p {
+        font-size: 13px;
+    }
+
+    .project-buttons {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .project-btn {
+        width: 100%;
+
+        padding: 12px 20px;
+    }
+}
+.project-image {
+    width: 100%;
+    height: 200px;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin-bottom: 20px;
+
+    border-radius: 15px;
+}
+
+/* =====================================================
+   CERTIFICATES SECTION
+===================================================== */
+
+.certificates {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 80px 7%;
+
+    background: #cde8f0;
+}
+
+
+/* =====================================================
+   SECTION TITLE
+===================================================== */
+
+.certificates .section-title {
+    text-align: center;
+
+    font-size: 40px;
+    font-weight: 700;
+
+    color: #f03e3e;
+
+    margin-bottom: 50px;
+}
+
+
+/* =====================================================
+   CERTIFICATE CONTAINER
+===================================================== */
+
+.certificate-container {
+    width: 100%;
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    /* 3 cards side by side */
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =====================================================
+   CERTIFICATE CARD
+===================================================== */
+
+.certificate-card {
+    background: #ced0d1;
+
+    border: 1px solid #dbd1d1;
+
+    border-radius: 12px;
+
+    padding: 30px 25px;
+
+    text-align: center;
+
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+    transition: all 0.3s ease;
+}
+
+
+/* =====================================================
+   CARD HOVER
+===================================================== */
+
+.certificate-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+
+    border-color: #f20a57;
+}
+
+
+/* =====================================================
+   CERTIFICATE ICON
+===================================================== */
+
+.certificate-icon {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #fff0f5;
+
+    color: #0b6169;
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Icon hover */
+
+.certificate-card:hover .certificate-icon {
+    background: #d80c50;
+
+    color: #413f3f;
+
+    transform: scale(1.08);
+}
+
+
+/* =====================================================
+   CERTIFICATE CONTENT
+===================================================== */
+
+.certificate-content {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    flex: 1;
+}
+
+
+/* =====================================================
+   CERTIFICATE NAME
+===================================================== */
+
+.certificate-content h3 {
+    font-size: 20px;
+
+    font-weight: 600;
+
+    color: #222222;
+
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+   ORGANIZATION
+===================================================== */
+
+.certificate-content h4 {
+    font-size: 14px;
+
+    font-weight: 500;
+
+    color: #ff4081;
+
+    margin-bottom: 12px;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.certificate-content p {
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: #666666;
+
+    margin-bottom: 20px;
+
+    max-width: 280px;
+}
+
+
+/* =====================================================
+   VIEW CERTIFICATE BUTTON
+===================================================== */
+
+.view-certificate-btn {
+    margin-top: auto;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 10px 20px;
+
+    background: #ff4081;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+
+/* =====================================================
+   BUTTON HOVER
+===================================================== */
+
+.view-certificate-btn:hover {
+    background: #230546;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 15px rgba(108, 99, 255, 0.25);
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 992px) {
+
+    .certificates {
+        padding: 70px 5%;
+    }
+
+    .certificates .section-title {
+        font-size: 35px;
+    }
+
+    .certificate-container {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 20px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .certificates {
+        padding: 60px 5%;
+    }
+
+    .certificates .section-title {
+        font-size: 32px;
+
+        margin-bottom: 35px;
+    }
+
+    .certificate-container {
+        /*
+           Keep 2 certificates side by side
+        */
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 15px;
+    }
+
+    .certificate-card {
+        padding: 22px 15px;
+
+        min-height: 280px;
+    }
+
+    .certificate-icon {
+        width: 55px;
+        height: 55px;
+
+        font-size: 23px;
+
+        margin-bottom: 15px;
+    }
+
+    .certificate-content h3 {
+        font-size: 16px;
+    }
+
+    .certificate-content h4 {
+        font-size: 12px;
+    }
+
+    .certificate-content p {
+        font-size: 11px;
+    }
+
+    .view-certificate-btn {
+        width: 100%;
+
+        padding: 9px 5px;
+
+        font-size: 11px;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .certificates {
+        padding: 50px 3%;
+    }
+
+    .certificates .section-title {
+        font-size: 27px;
+    }
+
+    .certificate-container {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+    .certificate-card {
+        padding: 18px 8px;
+
+        min-height: 260px;
+    }
+
+    .certificate-icon {
+        width: 48px;
+        height: 48px;
+
+        font-size: 20px;
+    }
+
+    .certificate-content h3 {
+        font-size: 13px;
+    }
+
+    .certificate-content h4 {
+        font-size: 10px;
+    }
+
+    .certificate-content p {
+        font-size: 9px;
+    }
+
+    .view-certificate-btn {
+        padding: 8px 4px;
+
+        font-size: 9px;
+    }
+}
+
+/* =====================================================
+   TABLET - 992px
+===================================================== */
+
+@media (max-width: 992px) {
+
+    .certificates {
+        padding: 70px 5%;
+    }
+
+    .certificate-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .certificate-image {
+        height: 200px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE - 768px
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .certificates {
+        padding: 60px 5%;
+    }
+
+    .certificates .section-title {
+        font-size: 32px;
+        margin-bottom: 35px;
+    }
+
+    .certificate-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .certificate-image {
+        height: 170px;
+    }
+
+    .certificate-card {
+        padding: 12px;
+    }
+
+    .certificate-content h3 {
+        font-size: 17px;
+    }
+
+    .certificate-content h4 {
+        font-size: 13px;
+    }
+
+    .certificate-content p {
+        font-size: 12px;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE - 480px
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .certificates {
+        padding: 50px 5%;
+    }
+
+    .certificates .section-title {
+        font-size: 28px;
+    }
+
+    .certificate-container {
+        grid-template-columns: 1fr;
+    }
+
+    .certificate-image {
+        height: 220px;
+    }
+
+    .certificate-content h3 {
+        font-size: 19px;
+    }
+
+    .certificate-content h4 {
+        font-size: 14px;
+    }
+
+    .certificate-content p {
+        font-size: 13px;
+    }
+
+    .view-certificate-btn {
+        width: 100%;
+    }
+}
+
+
+/* =====================================================
+   RESUME
+===================================================== */
+
+#resume {
+    text-align: center;
+}
+
+#resume p {
+    margin-bottom: 25px;
+    color: #730658;
+}#resume {
+    padding: 80px 8%;
+}
+
+#resume-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+    background: white;
+    color: #222;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+#resume-content h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#resume-content > p:first-of-type {
+    text-align: center;
+    font-size: 18px;
+}
+
+#resume-content h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #e51752;
+    border-bottom: 2px solid #f81756;
+    padding-bottom: 5px;
+}
+
+#resume-content p,
+#resume-content li {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+#resume-content ul {
+    padding-left: 25px;
+}
+
+.download-btn {
+    display: block;
+    margin: 30px auto 0;
+
+    padding: 13px 25px;
+
+    background: #db0642;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background: #e00f4e;
+    transform: translateY(-3px);
+}
+.download-btn:hover {
+    background: #313d47;
+    transform: translateY(-3px);
+}
+#resume {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#resume-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* =====================================================
+   CONTACT FORM
+===================================================== */
+
+form {
+    width: 70%;
+    max-width: 800px;
+
+    margin: 0 auto;
+}
+
+form input,
+form textarea {
+    width: 100%;
+
+    padding: 15px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #908b8b;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 16px;
+
+    background: #d6d6d6;
+
+    color: #c0bcbc;
+
+    transition: all 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #38bdf8;
+
+    box-shadow:
+        0 0 5px rgba(56, 189, 248, 0.30);
+}
+
+form textarea {
+    resize: vertical;
+
+    min-height: 150px;
+}
+
+form button {
+    background: #690339;
+
+    color: #c3bcbc;
+
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: #340322;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    background: #151f36;
+
+    color: #c5c3c3;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    margin: 0 10px;
+
+    font-size: 24px;
+
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #38bdf8;
+}
+
+
+/* =====================================================
+   TABLET - 992px
+===================================================== */
+
+@media (max-width: 992px) {
+
+    /* Navbar */
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    /* Home */
+
+    .home {
+        gap: 30px;
+    }
+
+    .home h1 {
+        font-size: 38px;
+    }
+
+    .home p {
+        width: 90%;
+    }
+
+    /* Contact */
+
+    form {
+        width: 90%;
+    }
+
+    /* Certificates */
+
+    .certificates {
+        padding: 80px 5%;
+    }
+
+    .certificates .section-title {
+        font-size: 36px;
+    }
+
+    .certificate-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 30px;
+    }
+
+    .certificate-image-container {
+        height: 230px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE - 768px
+===================================================== */
+
+@media (max-width: 768px) {
+
+    /* Common */
+
+    section {
+        width: 90%;
+        padding: 60px 0;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+
+    /* Navbar */
+
+    .navbar {
+        width: 90%;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+
+    /* Home */
+
+    .home {
+        width: 90%;
+
+        min-height: auto;
+
+        flex-direction: column;
+
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        gap: 30px;
+    }
+
+    .profile-container {
+        width: 100%;
+    }
+
+    .home-content {
+        width: 100%;
+    }
+
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .home h1 {
+        font-size: 32px;
+    }
+
+    .home h3 {
+        font-size: 20px;
+    }
+
+    .home p {
+        width: 95%;
+    }
+
+
+    /* Projects */
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Skills */
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* Certificates */
+
+    .certificates {
+        width: 100%;
+
+        padding: 65px 5%;
+    }
+
+    .certificates .section-title {
+        font-size: 32px;
+
+        margin-bottom: 10px;
+    }
+
+    .certificate-subtitle {
+        font-size: 14px;
+
+        margin-bottom: 35px;
+    }
+
+    .certificate-container {
+        grid-template-columns: 1fr;
+
+        width: 100%;
+
+        max-width: 520px;
+
+        margin: 0 auto;
+
+        gap: 30px;
+    }
+
+    .certificate-image-container {
+        height: 260px;
+    }
+
+    .certificate-content {
+        padding: 22px;
+    }
+
+    .certificate-content h3 {
+        font-size: 20px;
+    }
+
+    .certificate-content h4 {
+        font-size: 15px;
+    }
+
+    .certificate-content p {
+        font-size: 14px;
+    }
+
+    .view-certificate-btn {
+        width: 100%;
+    }
+
+
+    /* Contact */
+
+    form {
+        width: 100%;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE - 480px
+===================================================== */
+
+@media (max-width: 480px) {
+
+    /* Navbar */
+
+    .navbar {
+        width: 95%;
+    }
+
+    .logo h2 {
+        font-size: 24px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 5px;
+    }
+
+    .nav-links li {
+        margin: 3px 0;
+    }
+
+
+    /* Home */
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+    }
+
+    .home h3 {
+        font-size: 1.5rem;
+    }
+
+    .home p {
+        font-size: 1rem;
+    }
+
+
+    /* Skills */
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Section title */
+
+    section h2 {
+        font-size: 26px;
+    }
+
+
+    /* Certificates */
+
+    .certificates {
+        padding: 50px 5%;
+    }
+
+    .certificates .section-title {
+        font-size: 28px;
+    }
+
+    .certificate-subtitle {
+        font-size: 13px;
+
+        margin-bottom: 30px;
+    }
+
+    .certificate-container {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .certificate-image-container {
+        height: 210px;
+    }
+
+    .certificate-content {
+        padding: 20px;
+    }
+
+    .certificate-number {
+        font-size: 11px;
+    }
+
+    .certificate-content h3 {
+        font-size: 19px;
+    }
+
+    .certificate-content h4 {
+        font-size: 14px;
+    }
+
+    .certificate-content p {
+        font-size: 13px;
+    }
+
+    .view-certificate-btn {
+        width: 100%;
+
+        padding: 11px 18px;
+
+        font-size: 13px;
+    }
+
+
+    /* Common buttons */
+
+    .btn {
+        padding: 11px 22px;
+    }
+
+
+    /* Footer */
+
+    footer {
+        padding: 25px 10px;
+    }
+
+    .social-icons a {
+        font-size: 21px;
+
+        margin: 0 7px;
+    }
+}
